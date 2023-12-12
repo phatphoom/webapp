@@ -1,4 +1,9 @@
-<?php session_start()?>
+<?php 
+session_start();
+include "db.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,13 +19,12 @@
 </head>
 <body>
     <h2 class="text-center mt-5">เข้าสู่ระบบ</h2>
-   
     <div class="container-md mt-5 content">
         <form action="login_funch.php" method="post">
             <input type="text" name="email" placeholder="email" 
             class="form-control"><br>
             <input type="password" name="password" placeholder="password" class="form-control"><br>
-            <input type="submit" value="สมัครสมาชิก" class="btn btn-primary mt-2">
+            <input type="submit" value="เข้าสู่ระบบ" class="btn btn-primary mt-2">
             <p>not have user yet<a href="register.php"> สมัครสมาชิก</a></p>
         </form>
     </div>
